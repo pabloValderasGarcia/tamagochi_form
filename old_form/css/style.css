@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Mixiwa';
+    src: url('../fonts/Mixiwa-PersonalUse.otf') format('woff');
+}
+
+html,
+body {
+    margin: 0;
+}
+
+a {
+    background-color: rgb(141, 34, 34);
+    transition: background-color 300ms ease;
+    text-decoration: none;
+    color: white;
+    user-select: none;
+}
+
+a:hover {
+    background-color: rgb(97, 35, 35);
+}
+
+span {
+    font-family: Montserrat;
+}
+
+/* -------------------- HIDDEN FORM -------------------- */
+#containerForm {
+    visibility: hidden;
+    position: absolute;
+}
+
+/* -------------------- MENU -------------------- */
+#menu {
+    width: 35em;
+    height: 45em;
+    margin: 3em auto;
+    background-color: rgb(140, 90, 66);
+    border: 50px solid rgb(173, 168, 12);
+
+    font-family: Mixiwa;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+}
+
+#title {
+    font-size: 5em;
+    margin: 0.8em auto 0.4em auto;
+}
+
+#options {
+    padding-left: 5em;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    color: black;
+}
+
+#options div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    padding: 0 2.6em;
+}
+
+#options div a {
+    padding: 2em;
+    border-radius: 50px;
+}
+
+#options p {
+    font-size: 1.8em;
+    margin-left: 1.5em;
+}
+
+#range {
+    width: 25em;
+    margin: 2.5em auto 3em auto;
+    background-color: transparent;
+}
+
+input[type=range] {
+    height: 38px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    box-shadow: 1px 1px 1px #000000;
+    background: rgb(141, 34, 34);
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px #000000;
+    border: 1px solid #000000;
+    height: 30px;
+    width: 19px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -11px;
+}
+
+input[type=range]::-webkit-slider-thumb:hover {
+    cursor: col-resize;
+}
+
+#send {
+    margin: 0 auto;
+    font-size: 2em;
+    padding: 0.6em 2em;
+    border: 5px solid black;
+}
+
+#send:focus {
+    background-color: black;
+}

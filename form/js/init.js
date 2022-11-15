@@ -1,4 +1,4 @@
-import { createForm, menuInterface } from './script.js';
+import { createForm, configureEvents } from './formHandler.js';
 
 let form = {
     "id" : "tamagochiForm",
@@ -27,4 +27,4 @@ let form = {
 }
 createForm(form);
 
-menuInterface();
+configureEvents();
